@@ -18,6 +18,7 @@ Do the following:
    HINT: no function required
 */
 
+
 var votingAge = 18
 if (votingAge >= 18) {
   console.log(true);
@@ -249,16 +250,14 @@ Using the annoyingSong function below do the following:
   1. Receive a starting number and start the count down from the number received 
   2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
-*/
-let i;
-let song = i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + (i - 1) + " bottles of soda on the wall";
+// */
 
+let i;
 function annoyingSong(startingNo){
     for (i = startingNo; i > 0; i--) {
-      return(i);
+      return(i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + (i - 1) + " bottles of soda on the wall");
     }
   };
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
