@@ -307,8 +307,16 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(string) {
+    let count = 0;
+    string = string.toLowerCase(); // setting the string so I don't have to test for both upper and lowercase //
+    string = string.split(""); // splitting the string into an array of single characters"
+    for(i = 0; i < string.length; i++) { // looping through the array and testing if each character is a vowel //
+      if(string[i].includes("a" | "e" | "i" | "o" | "u")) {
+        count++; // if the character at index i is a vowel, increase the count by 1 //
+      };
+    };
+    return(count);
 }
 
 
